@@ -5,9 +5,6 @@ document.addEventListener('DOMContentLoaded', function () {
   document.getElementById('myDiv').addEventListener('click', redirect);
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-  document.getElementById('1').addEventListener('click', redirect);
-});
 
 document.addEventListener('DOMContentLoaded', function () {
   document.getElementById('back').addEventListener('click', loadXMLDoc);
@@ -34,7 +31,7 @@ xmlhttp.onreadystatechange=function()
     document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
     }
   }
-xmlhttp.open("GET","https://localhost/redirect.php?id="+btn.id,true);
+xmlhttp.open("GET","http://localhost/redirect.php?id="+btn.id,true);
 xmlhttp.send();
 }
 function loadXMLDoc()
@@ -55,6 +52,6 @@ xmlhttp.onreadystatechange=function()
     document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
     }
   }
-xmlhttp.open("GET","https://localhost/ajax.php",true);
+xmlhttp.open("GET","http://localhost/ajax.php",true);
 xmlhttp.send();
 }
