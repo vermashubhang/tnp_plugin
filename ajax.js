@@ -9,6 +9,11 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
   document.getElementById('back').addEventListener('click', loadXMLDoc);
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  document.getElementById('next').addEventListener('click', loadXMLDoc);
+});
+
 function redirect()
 {
 	//alert("hi");
@@ -52,6 +57,6 @@ xmlhttp.onreadystatechange=function()
     document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
     }
   }
-xmlhttp.open("GET","http://localhost/ajax.php",true);
+xmlhttp.open("GET","http://localhost/ajax.php?page=1",true);
 xmlhttp.send();
 }
