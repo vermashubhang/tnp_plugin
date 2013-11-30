@@ -6,9 +6,9 @@
   "version": "1.0",
 
   "permissions": [
-    "https://localhost/ajax.php",
+    "http://cse.iitkgp.ac.in/~shubhangv/redirect.php",
 	"https://tp.iitkgp.ernet.in/notice/",
-	"https://localhost/redirect.php"
+	"http://cse.iitkgp.ac.in/~shubhangv/ajax.php"
   ],
   "content_scripts": [ {"js": [ "ajax.html" ], "matches": [ "http://*/" ]} ],
   "permissions": [ "tabs" ],
